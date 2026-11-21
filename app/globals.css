@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 38 33% 98%;
+    --foreground: 222 29% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 29% 15%;
+    --primary: 169 44% 34%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 166 32% 94%;
+    --secondary-foreground: 169 44% 27%;
+    --muted: 40 22% 95%;
+    --muted-foreground: 220 10% 47%;
+    --accent: 40 22% 95%;
+    --accent-foreground: 222 29% 15%;
+    --destructive: 0 70% 53%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 35 18% 89%;
+    --input: 35 18% 86%;
+    --ring: 169 44% 34%;
+    --radius: 0.9rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01" on, "cv11" on;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.16);
+  }
+}
+
+.dot-grid {
+  background-image: radial-gradient(hsl(var(--foreground) / 0.12) 0.7px, transparent 0.7px);
+  background-size: 15px 15px;
+}
+
+.chat-scroll {
+  scrollbar-color: hsl(var(--border)) transparent;
+  scrollbar-width: thin;
+}
