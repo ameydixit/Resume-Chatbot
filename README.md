@@ -1,6 +1,6 @@
 # Folio — Interview practice
 
-A resume-grounded interview practice app based on `w2_s7_03_resume_chatbot.ipynb`. The AI answers as the candidate, stays within the uploaded resume, and handles unknown experience honestly.
+A resume-grounded interview practice app. The AI answers as the candidate, stays within the uploaded resume, and handles unknown experience honestly.
 
 ## Run locally
 
